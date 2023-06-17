@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <ui:composition template="/template.xhtml">
+        <ui:define name="title">
+            <h:outputText value="#{bundle.CreateAppuserTitle}"></h:outputText>
+        </ui:define>
+        <ui:define name="body">
+            <h:panelGroup id="messagePanel" layout="block">
+                <h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+            </h:panelGroup>
+            <h:form>
+                <h:panelGrid columns="2">
+                    <h:outputLabel value="#{bundle.CreateAppuserLabel_id}" for="id" />
+                    <h:inputText id="id" value="#{appuserController.selected.id}" title="#{bundle.CreateAppuserTitle_id}" required="true" requiredMessage="#{bundle.CreateAppuserRequiredMessage_id}"/>
+                    <h:outputLabel value="#{bundle.CreateAppuserLabel_groupname}" for="groupname" />
+                    <h:inputText id="groupname" value="#{appuserController.selected.groupname}" title="#{bundle.CreateAppuserTitle_groupname}" required="true" />
+                    <h:outputLabel value="#{bundle.CreateAppuserLabel_password}" for="password" />
+                    <h:inputText id="password" value="#{appuserController.selected.password}" title="#{bundle.CreateAppuserTitle_password}" required="true" />
+                </h:panelGrid>
+                <br />
+                <h:commandLink action="#{appuserController.create}" value="#{bundle.CreateAppuserSaveLink}" />
+                <br />
+                <br />
+                <h:commandLink action="#{appuserController.prepareList}" value="#{bundle.CreateAppuserShowAllLink}" immediate="true"/>
+                <br />
+                <br />
+                <h:link outcome="/index" value="#{bundle.CreateAppuserIndexLink}"/>
+            </h:form>
+        </ui:define>
+    </ui:composition>
+
+</html>

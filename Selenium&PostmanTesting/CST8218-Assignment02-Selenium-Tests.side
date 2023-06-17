@@ -1,0 +1,683 @@
+{
+  "id": "4bd9b3a1-9674-4736-b338-f4f4d8dd8147",
+  "version": "2.0",
+  "name": "CST8218-Assignment02",
+  "url": "http://localhost:8080/SpriteUsers-war/faces/index.xhtml",
+  "tests": [{
+    "id": "6f602447-815e-40b4-bf86-301a44852930",
+    "name": "Admin User - Link Test - Create Sprite to Show All",
+    "commands": [{
+      "id": "866cc719-1e1e-4ed0-b609-a1280d2841de",
+      "comment": "",
+      "command": "open",
+      "target": "/SpriteUsers-war/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "85c72652-7c25-4b85-ae90-48b1a6c1dc93",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1452x784",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9b3261f2-c827-4e62-ac2a-1e1b3d2f6060",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Show All Sprite Items",
+      "targets": [
+        ["linkText=Show All Sprite Items", "linkText"],
+        ["css=a:nth-child(6)", "css:finder"],
+        ["xpath=//a[contains(text(),'Show All Sprite Items')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/SpriteUsers-war/faces/sprite/List.xhtml')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Show All Sprite Items')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8b90b254-2a7a-4ce6-85ea-a71731d6d4dc",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=View",
+      "targets": [
+        ["linkText=View", "linkText"],
+        ["css=a:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'View')]", "xpath:link"],
+        ["xpath=//a[@onclick=\"mojarra.jsfcljs(document.getElementById('j_idt11'),{'j_idt11:j_idt21:0:j_idt45':'j_idt11:j_idt21:0:j_idt45'},'');return false\"]", "xpath:attributes"],
+        ["xpath=//form[@id='j_idt11']/table/tbody/tr/td[8]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'View')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "eea3464b-6b6c-4df0-abc9-90f81e45a40c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Show All Sprite Items",
+      "targets": [
+        ["linkText=Show All Sprite Items", "linkText"],
+        ["css=a:nth-child(12)", "css:finder"],
+        ["xpath=//a[contains(text(),'Show All Sprite Items')]", "xpath:link"],
+        ["xpath=//a[@onclick=\"mojarra.jsfcljs(document.getElementById('j_idt12'),{'j_idt12:j_idt35':'j_idt12:j_idt35'},'');return false\"]", "xpath:attributes"],
+        ["xpath=//form[@id='j_idt12']/a[4]", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[3]", "xpath:href"],
+        ["xpath=//a[4]", "xpath:position"],
+        ["xpath=//a[contains(.,'Show All Sprite Items')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7e7e81db-4bf7-44f5-9e1c-a9889dc2d526",
+      "comment": "List Text present, no routing errors occurred ",
+      "command": "assertText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'List')]", "xpath:innerText"]
+      ],
+      "value": "List"
+    }]
+  }, {
+    "id": "97bf88a0-8e19-463d-8434-a1508d2df40d",
+    "name": "Admin User - Link Test - Create Sprite to Index",
+    "commands": [{
+      "id": "351826eb-b74d-4c1a-b573-49d7170b11b5",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/SpriteUsers-war/faces/index.xhtml",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "95a0baed-adce-4982-bd2c-a41f5d302382",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1452x784",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8069a727-918d-43f1-b765-6b67c28c2d31",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Show All Sprite Items",
+      "targets": [
+        ["linkText=Show All Sprite Items", "linkText"],
+        ["css=a:nth-child(6)", "css:finder"],
+        ["xpath=//a[contains(text(),'Show All Sprite Items')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/SpriteUsers-war/faces/sprite/List.xhtml')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Show All Sprite Items')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "845acdc8-7781-443e-b460-e8b963b8ba4d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Create New Sprite",
+      "targets": [
+        ["linkText=Create New Sprite", "linkText"],
+        ["css=a:nth-child(5)", "css:finder"],
+        ["xpath=//a[contains(text(),'Create New Sprite')]", "xpath:link"],
+        ["xpath=//a[@onclick=\"mojarra.jsfcljs(document.getElementById('j_idt11'),{'j_idt11:j_idt51':'j_idt11:j_idt51'},'');return false\"]", "xpath:attributes"],
+        ["xpath=//form[@id='j_idt11']/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[4]", "xpath:href"],
+        ["xpath=//form/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Create New Sprite')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3b3ecffb-0b62-40a6-8853-c1f70a8f7fdd",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Index",
+      "targets": [
+        ["linkText=Index", "linkText"],
+        ["css=a:nth-child(11)", "css:finder"],
+        ["xpath=//a[contains(text(),'Index')]", "xpath:link"],
+        ["xpath=//form[@id='j_idt12']/a[3]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/SpriteUsers-war/faces/index.xhtml')]", "xpath:href"],
+        ["xpath=//a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'Index')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ee49dc82-4738-4627-99bd-7bc674c370d2",
+      "comment": "Index Text present, no routing errors occurred ",
+      "command": "assertText",
+      "target": "css=body",
+      "targets": [
+        ["css=body", "css:finder"],
+        ["xpath=//body", "xpath:position"]
+      ],
+      "value": "Course: CST8218 Section 301\\nProfessor: Yamen Nasrallah\\nAssessment: Assignment 2\\n\\nShow All Sprite Items\\n\\nShow All Appuser Items"
+    }]
+  }, {
+    "id": "2d3c4b0c-adc1-4a2f-a2ed-c291190f727f",
+    "name": "Admin User - Link Test - Create Appuser to Show All",
+    "commands": [{
+      "id": "269ad943-dc5d-4c5a-82ca-7764f9489015",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/SpriteUsers-war/faces/index.xhtml",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "40600763-487d-4bb9-840d-88742446bc63",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1452x784",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fa9c9dc9-43c1-4da8-af67-f7059734d205",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Show All Appuser Items",
+      "targets": [
+        ["linkText=Show All Appuser Items", "linkText"],
+        ["css=a:nth-child(9)", "css:finder"],
+        ["xpath=//a[contains(text(),'Show All Appuser Items')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/SpriteUsers-war/faces/appuser/List.xhtml')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Show All Appuser Items')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "baa16211-2a22-4028-9a17-1cdcbcff96e6",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Create New User",
+      "targets": [
+        ["linkText=Create New User", "linkText"],
+        ["css=a:nth-child(5)", "css:finder"],
+        ["xpath=//a[contains(text(),'Create New User')]", "xpath:link"],
+        ["xpath=//a[@onclick=\"mojarra.jsfcljs(document.getElementById('j_idt11'),{'j_idt11:j_idt39':'j_idt11:j_idt39'},'');return false\"]", "xpath:attributes"],
+        ["xpath=//form[@id='j_idt11']/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[13]", "xpath:href"],
+        ["xpath=//form/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Create New User')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5ed862c8-85d5-44ad-9768-a5b5db6adf53",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Show All User Items",
+      "targets": [
+        ["linkText=Show All User Items", "linkText"],
+        ["css=a:nth-child(8)", "css:finder"],
+        ["xpath=//a[contains(text(),'Show All User Items')]", "xpath:link"],
+        ["xpath=//a[@onclick=\"mojarra.jsfcljs(document.getElementById('j_idt12'),{'j_idt12:j_idt20':'j_idt12:j_idt20'},'');return false\"]", "xpath:attributes"],
+        ["xpath=//form[@id='j_idt12']/a[2]", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[2]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Show All User Items')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b5d6fa1f-66cd-4368-8b26-b1ef6c1490c6",
+      "comment": "List Text present, no routing errors occurred ",
+      "command": "assertText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'List')]", "xpath:innerText"]
+      ],
+      "value": "List"
+    }]
+  }, {
+    "id": "b3b8cbc9-685e-40e0-a0cd-b706173f15ae",
+    "name": "Admin User - Link Test - Create Appuser to Index",
+    "commands": [{
+      "id": "653280d3-a9c3-4fd2-92c8-9ddc11adfc5c",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/SpriteUsers-war/faces/index.xhtml",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a9e42604-968c-4545-b0df-509184cde87f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1452x784",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c966cf62-a60e-413d-a16a-10941400845e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Show All Appuser Items",
+      "targets": [
+        ["linkText=Show All Appuser Items", "linkText"],
+        ["css=a:nth-child(9)", "css:finder"],
+        ["xpath=//a[contains(text(),'Show All Appuser Items')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/SpriteUsers-war/faces/appuser/List.xhtml')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Show All Appuser Items')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "280176f2-9ec5-461c-91ba-d88384594906",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Create New User",
+      "targets": [
+        ["linkText=Create New User", "linkText"],
+        ["css=a:nth-child(5)", "css:finder"],
+        ["xpath=//a[contains(text(),'Create New User')]", "xpath:link"],
+        ["xpath=//a[@onclick=\"mojarra.jsfcljs(document.getElementById('j_idt11'),{'j_idt11:j_idt39':'j_idt11:j_idt39'},'');return false\"]", "xpath:attributes"],
+        ["xpath=//form[@id='j_idt11']/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[13]", "xpath:href"],
+        ["xpath=//form/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Create New User')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "92e74bf1-7df0-41e9-942e-d6df5632211b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Index",
+      "targets": [
+        ["linkText=Index", "linkText"],
+        ["css=a:nth-child(11)", "css:finder"],
+        ["xpath=//a[contains(text(),'Index')]", "xpath:link"],
+        ["xpath=//form[@id='j_idt12']/a[3]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/SpriteUsers-war/faces/index.xhtml')]", "xpath:href"],
+        ["xpath=//a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'Index')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b8bc7793-3032-407d-98e4-c53b586109a3",
+      "comment": "Index Text present, no routing errors occurred ",
+      "command": "assertText",
+      "target": "css=body",
+      "targets": [
+        ["css=body", "css:finder"],
+        ["xpath=//body", "xpath:position"]
+      ],
+      "value": "Course: CST8218 Section 301\\nProfessor: Yamen Nasrallah\\nAssessment: Assignment 2\\n\\nShow All Sprite Items\\n\\nShow All Appuser Items"
+    }]
+  }, {
+    "id": "3ae72869-e685-4d23-90ab-c9c6c6289b41",
+    "name": "Admin User - Create Test - Create new Sprite",
+    "commands": [{
+      "id": "d45fb21d-9103-498e-8106-2ad7fb29eea1",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/SpriteUsers-war/faces/index.xhtml",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "af656671-9b36-4211-9f31-26ec75ea8d5e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1452x784",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "04aafcc7-b459-434e-9ea5-eb8ae0c979da",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Show All Sprite Items",
+      "targets": [
+        ["linkText=Show All Sprite Items", "linkText"],
+        ["css=a:nth-child(6)", "css:finder"],
+        ["xpath=//a[contains(text(),'Show All Sprite Items')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/SpriteUsers-war/faces/sprite/List.xhtml')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Show All Sprite Items')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "714263ca-f7a2-445b-b4b4-d66af464f31d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Create New Sprite",
+      "targets": [
+        ["linkText=Create New Sprite", "linkText"],
+        ["css=a:nth-child(5)", "css:finder"],
+        ["xpath=//a[contains(text(),'Create New Sprite')]", "xpath:link"],
+        ["xpath=//a[@onclick=\"mojarra.jsfcljs(document.getElementById('j_idt11'),{'j_idt11:j_idt51':'j_idt11:j_idt51'},'');return false\"]", "xpath:attributes"],
+        ["xpath=//form[@id='j_idt11']/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[4]", "xpath:href"],
+        ["xpath=//form/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Create New Sprite')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "41b819f8-a87b-493a-a210-45dacd519bbf",
+      "comment": "",
+      "command": "click",
+      "target": "id=j_idt12:panelWidth",
+      "targets": [
+        ["id=j_idt12:panelWidth", "id"],
+        ["name=j_idt12:panelWidth", "name"],
+        ["css=#j_idt12\\3ApanelWidth", "css:finder"],
+        ["xpath=//input[@id='j_idt12:panelWidth']", "xpath:attributes"],
+        ["xpath=//form[@id='j_idt12']/table/tbody/tr/td[2]/input", "xpath:idRelative"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f6633811-e4ad-49f3-a877-cb1e80a8e4c6",
+      "comment": "",
+      "command": "type",
+      "target": "id=j_idt12:panelWidth",
+      "targets": [
+        ["id=j_idt12:panelWidth", "id"],
+        ["name=j_idt12:panelWidth", "name"],
+        ["css=#j_idt12\\3ApanelWidth", "css:finder"],
+        ["xpath=//input[@id='j_idt12:panelWidth']", "xpath:attributes"],
+        ["xpath=//form[@id='j_idt12']/table/tbody/tr/td[2]/input", "xpath:idRelative"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": "713"
+    }, {
+      "id": "c96b3df9-dd13-4588-b9aa-b92cd12073fc",
+      "comment": "",
+      "command": "click",
+      "target": "id=j_idt12:panelHeight",
+      "targets": [
+        ["id=j_idt12:panelHeight", "id"],
+        ["name=j_idt12:panelHeight", "name"],
+        ["css=#j_idt12\\3ApanelHeight", "css:finder"],
+        ["xpath=//input[@id='j_idt12:panelHeight']", "xpath:attributes"],
+        ["xpath=//form[@id='j_idt12']/table/tbody/tr[2]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[2]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3321440d-2b8a-4a34-b043-144ff0bb3e82",
+      "comment": "",
+      "command": "type",
+      "target": "id=j_idt12:panelHeight",
+      "targets": [
+        ["id=j_idt12:panelHeight", "id"],
+        ["name=j_idt12:panelHeight", "name"],
+        ["css=#j_idt12\\3ApanelHeight", "css:finder"],
+        ["xpath=//input[@id='j_idt12:panelHeight']", "xpath:attributes"],
+        ["xpath=//form[@id='j_idt12']/table/tbody/tr[2]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[2]/td[2]/input", "xpath:position"]
+      ],
+      "value": "327"
+    }, {
+      "id": "562763ae-32cd-495e-882f-29418d2bd309",
+      "comment": "",
+      "command": "click",
+      "target": "id=j_idt12:x",
+      "targets": [
+        ["id=j_idt12:x", "id"],
+        ["name=j_idt12:x", "name"],
+        ["css=#j_idt12\\3Ax", "css:finder"],
+        ["xpath=//input[@id='j_idt12:x']", "xpath:attributes"],
+        ["xpath=//form[@id='j_idt12']/table/tbody/tr[3]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[3]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "eab196bc-deef-4617-ab63-f99349216360",
+      "comment": "",
+      "command": "type",
+      "target": "id=j_idt12:x",
+      "targets": [
+        ["id=j_idt12:x", "id"],
+        ["name=j_idt12:x", "name"],
+        ["css=#j_idt12\\3Ax", "css:finder"],
+        ["xpath=//input[@id='j_idt12:x']", "xpath:attributes"],
+        ["xpath=//form[@id='j_idt12']/table/tbody/tr[3]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[3]/td[2]/input", "xpath:position"]
+      ],
+      "value": "13"
+    }, {
+      "id": "3abc7f76-efbe-4057-9a47-bf9c2cbc54c4",
+      "comment": "",
+      "command": "click",
+      "target": "id=j_idt12:y",
+      "targets": [
+        ["id=j_idt12:y", "id"],
+        ["name=j_idt12:y", "name"],
+        ["css=#j_idt12\\3Ay", "css:finder"],
+        ["xpath=//input[@id='j_idt12:y']", "xpath:attributes"],
+        ["xpath=//form[@id='j_idt12']/table/tbody/tr[4]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[4]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "68daa46e-089c-400a-9cd7-76d04843bfc4",
+      "comment": "",
+      "command": "type",
+      "target": "id=j_idt12:y",
+      "targets": [
+        ["id=j_idt12:y", "id"],
+        ["name=j_idt12:y", "name"],
+        ["css=#j_idt12\\3Ay", "css:finder"],
+        ["xpath=//input[@id='j_idt12:y']", "xpath:attributes"],
+        ["xpath=//form[@id='j_idt12']/table/tbody/tr[4]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[4]/td[2]/input", "xpath:position"]
+      ],
+      "value": "17"
+    }, {
+      "id": "3d32e2ab-ea03-469a-96e4-c5a4bb76b74a",
+      "comment": "",
+      "command": "click",
+      "target": "id=j_idt12:dx",
+      "targets": [
+        ["id=j_idt12:dx", "id"],
+        ["name=j_idt12:dx", "name"],
+        ["css=#j_idt12\\3A dx", "css:finder"],
+        ["xpath=//input[@id='j_idt12:dx']", "xpath:attributes"],
+        ["xpath=//form[@id='j_idt12']/table/tbody/tr[5]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[5]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f07a13ee-b4e9-4c19-b64c-17694b2bfdee",
+      "comment": "",
+      "command": "type",
+      "target": "id=j_idt12:dx",
+      "targets": [
+        ["id=j_idt12:dx", "id"],
+        ["name=j_idt12:dx", "name"],
+        ["css=#j_idt12\\3A dx", "css:finder"],
+        ["xpath=//input[@id='j_idt12:dx']", "xpath:attributes"],
+        ["xpath=//form[@id='j_idt12']/table/tbody/tr[5]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[5]/td[2]/input", "xpath:position"]
+      ],
+      "value": "32"
+    }, {
+      "id": "33ff5aab-aca8-4f22-8ff6-3fd7a7ab4d29",
+      "comment": "",
+      "command": "click",
+      "target": "id=j_idt12:dy",
+      "targets": [
+        ["id=j_idt12:dy", "id"],
+        ["name=j_idt12:dy", "name"],
+        ["css=#j_idt12\\3A dy", "css:finder"],
+        ["xpath=//input[@id='j_idt12:dy']", "xpath:attributes"],
+        ["xpath=//form[@id='j_idt12']/table/tbody/tr[6]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[6]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3b786b12-d6f0-433a-a666-85f17b3b34a7",
+      "comment": "",
+      "command": "click",
+      "target": "id=j_idt12:dx",
+      "targets": [
+        ["id=j_idt12:dx", "id"],
+        ["name=j_idt12:dx", "name"],
+        ["css=#j_idt12\\3A dx", "css:finder"],
+        ["xpath=//input[@id='j_idt12:dx']", "xpath:attributes"],
+        ["xpath=//form[@id='j_idt12']/table/tbody/tr[5]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[5]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6117f0fe-d049-4465-ad55-fc34bc1f7a5d",
+      "comment": "",
+      "command": "click",
+      "target": "id=j_idt12:dx",
+      "targets": [
+        ["id=j_idt12:dx", "id"],
+        ["name=j_idt12:dx", "name"],
+        ["css=#j_idt12\\3A dx", "css:finder"],
+        ["xpath=//input[@id='j_idt12:dx']", "xpath:attributes"],
+        ["xpath=//form[@id='j_idt12']/table/tbody/tr[5]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[5]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5f999d54-98c1-4578-a29b-f2c6b997aa27",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "id=j_idt12:dx",
+      "targets": [
+        ["id=j_idt12:dx", "id"],
+        ["name=j_idt12:dx", "name"],
+        ["css=#j_idt12\\3A dx", "css:finder"],
+        ["xpath=//input[@id='j_idt12:dx']", "xpath:attributes"],
+        ["xpath=//form[@id='j_idt12']/table/tbody/tr[5]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[5]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "381b9248-b7b2-40ef-ae91-b318161fc290",
+      "comment": "",
+      "command": "type",
+      "target": "id=j_idt12:dx",
+      "targets": [
+        ["id=j_idt12:dx", "id"],
+        ["name=j_idt12:dx", "name"],
+        ["css=#j_idt12\\3A dx", "css:finder"],
+        ["xpath=//input[@id='j_idt12:dx']", "xpath:attributes"],
+        ["xpath=//form[@id='j_idt12']/table/tbody/tr[5]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[5]/td[2]/input", "xpath:position"]
+      ],
+      "value": "3"
+    }, {
+      "id": "490f59ae-3adf-4b9d-b433-3c6445aa6e99",
+      "comment": "",
+      "command": "click",
+      "target": "id=j_idt12:dy",
+      "targets": [
+        ["id=j_idt12:dy", "id"],
+        ["name=j_idt12:dy", "name"],
+        ["css=#j_idt12\\3A dy", "css:finder"],
+        ["xpath=//input[@id='j_idt12:dy']", "xpath:attributes"],
+        ["xpath=//form[@id='j_idt12']/table/tbody/tr[6]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[6]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ceaeb1ab-98b2-4791-bfb4-1131956ec5ae",
+      "comment": "",
+      "command": "type",
+      "target": "id=j_idt12:dy",
+      "targets": [
+        ["id=j_idt12:dy", "id"],
+        ["name=j_idt12:dy", "name"],
+        ["css=#j_idt12\\3A dy", "css:finder"],
+        ["xpath=//input[@id='j_idt12:dy']", "xpath:attributes"],
+        ["xpath=//form[@id='j_idt12']/table/tbody/tr[6]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[6]/td[2]/input", "xpath:position"]
+      ],
+      "value": "2"
+    }, {
+      "id": "fa1d40c0-aeac-4d5d-b7ce-6ecae2f1c6d9",
+      "comment": "",
+      "command": "click",
+      "target": "id=j_idt12:color",
+      "targets": [
+        ["id=j_idt12:color", "id"],
+        ["name=j_idt12:color", "name"],
+        ["css=#j_idt12\\3A color", "css:finder"],
+        ["xpath=//input[@id='j_idt12:color']", "xpath:attributes"],
+        ["xpath=//form[@id='j_idt12']/table/tbody/tr[7]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[7]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "85867916-5a87-480e-8b18-5210ab4a2d3c",
+      "comment": "",
+      "command": "type",
+      "target": "id=j_idt12:color",
+      "targets": [
+        ["id=j_idt12:color", "id"],
+        ["name=j_idt12:color", "name"],
+        ["css=#j_idt12\\3A color", "css:finder"],
+        ["xpath=//input[@id='j_idt12:color']", "xpath:attributes"],
+        ["xpath=//form[@id='j_idt12']/table/tbody/tr[7]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[7]/td[2]/input", "xpath:position"]
+      ],
+      "value": "#0a11ff"
+    }, {
+      "id": "1ac6e55f-ebb9-4f45-bb9e-a2c1696b6572",
+      "comment": "",
+      "command": "click",
+      "target": "id=j_idt12",
+      "targets": [
+        ["id=j_idt12", "id"],
+        ["name=j_idt12", "name"],
+        ["css=#j_idt12", "css:finder"],
+        ["xpath=//form[@id='j_idt12']", "xpath:attributes"],
+        ["xpath=//form", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c9aed5e8-deec-4ad0-a002-f0cb07eff6ff",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Save",
+      "targets": [
+        ["linkText=Save", "linkText"],
+        ["css=a:nth-child(5)", "css:finder"],
+        ["xpath=//a[contains(text(),'Save')]", "xpath:link"],
+        ["xpath=//a[@onclick=\"mojarra.jsfcljs(document.getElementById('j_idt12'),{'j_idt12:j_idt22':'j_idt12:j_idt22'},'');return false\"]", "xpath:attributes"],
+        ["xpath=//form[@id='j_idt12']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Save')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "493b28e7-ab42-4e5b-99d8-11f3bba2bb90",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Show All Sprite Items",
+      "targets": [
+        ["linkText=Show All Sprite Items", "linkText"],
+        ["css=a:nth-child(8)", "css:finder"],
+        ["xpath=//a[contains(text(),'Show All Sprite Items')]", "xpath:link"],
+        ["xpath=//a[@onclick=\"mojarra.jsfcljs(document.getElementById('j_idt12'),{'j_idt12:j_idt24':'j_idt12:j_idt24'},'');return false\"]", "xpath:attributes"],
+        ["xpath=//form[@id='j_idt12']/a[2]", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[2]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Show All Sprite Items')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "46ed9735-cb87-4779-bd26-17173b03a0c8",
+      "comment": "List Text present, no routing errors occurred ",
+      "command": "assertText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'List')]", "xpath:innerText"]
+      ],
+      "value": "List"
+    }]
+  }],
+  "suites": [{
+    "id": "2697bd68-4bfb-48e7-ab6d-74302fe40f1a",
+    "name": "Admin User",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["3ae72869-e685-4d23-90ab-c9c6c6289b41", "b3b8cbc9-685e-40e0-a0cd-b706173f15ae", "2d3c4b0c-adc1-4a2f-a2ed-c291190f727f", "97bf88a0-8e19-463d-8434-a1508d2df40d", "6f602447-815e-40b4-bf86-301a44852930"]
+  }],
+  "urls": ["http://localhost:8080/", "http://localhost:8080/SpriteUsers-war/faces/index.xhtml"],
+  "plugins": []
+}

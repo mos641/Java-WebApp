@@ -1,0 +1,490 @@
+{
+	"info": {
+		"_postman_id": "5e6eaba8-ba25-43a2-9afc-c056e7d92bf1",
+		"name": "Assignment02",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET with id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "001",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/SpriteUsers-war/api/sprites/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"SpriteUsers-war",
+						"api",
+						"sprites",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET all sprites",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/SpriteUsers-war/api/sprites/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"SpriteUsers-war",
+						"api",
+						"sprites",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET number of sprites (B)",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "uid02",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "text/plain",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/SpriteUsers-war/api/sprites/count",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"SpriteUsers-war",
+						"api",
+						"sprites",
+						"count"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST with id - error ID DNE (Ci)",
+			"request": {
+				"auth": {
+					"type": "basic"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"color\": {\r\n            \"red\": 0,\r\n            \"green\": 0,\r\n            \"blue\": 255\r\n        },\r\n        \"dx\": 1,\r\n        \"dy\": 1,\r\n        \"panelHeight\": 11,\r\n        \"panelWidth\": 11,\r\n        \"x\": 3,\r\n        \"y\": 3\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/SpriteUsers-war/api/sprites/175326",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"SpriteUsers-war",
+						"api",
+						"sprites",
+						"175326"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST with id - non-null updated (Cii)",
+			"request": {
+				"auth": {
+					"type": "basic"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"x\": 154\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/SpriteUsers-war/api/sprites/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"SpriteUsers-war",
+						"api",
+						"sprites",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT with id - error ID DNE (Di)",
+			"request": {
+				"auth": {
+					"type": "basic"
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"color\": {\r\n            \"red\": 0,\r\n            \"green\": 0,\r\n            \"blue\": 255\r\n        },\r\n        \"dx\": 1,\r\n        \"dy\": 1,\r\n        \"panelHeight\": 11,\r\n        \"panelWidth\": 11,\r\n        \"x\": 4,\r\n        \"y\": 4\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/SpriteUsers-war/api/sprites/1243545",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"SpriteUsers-war",
+						"api",
+						"sprites",
+						"1243545"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT with id - replace sprite (Dii)",
+			"request": {
+				"auth": {
+					"type": "basic"
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"color\": {\r\n            \"red\": 0,\r\n            \"green\": 244,\r\n            \"blue\": 255\r\n        },\r\n        \"dx\": 1,\r\n        \"dy\": 1,\r\n        \"panelHeight\": 444,\r\n        \"panelWidth\": 374,\r\n        \"x\": 4,\r\n        \"y\": 4\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/SpriteUsers-war/api/sprites/301",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"SpriteUsers-war",
+						"api",
+						"sprites",
+						"301"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT on root - error (E)",
+			"request": {
+				"auth": {
+					"type": "basic"
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/SpriteUsers-war/api/sprites/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"SpriteUsers-war",
+						"api",
+						"sprites",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST on root - null id create (Fi1)",
+			"request": {
+				"auth": {
+					"type": "basic"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"color\": {\r\n            \"red\": 25,\r\n            \"green\": 74,\r\n            \"blue\": 255\r\n        },\r\n        \"dx\": 3,\r\n        \"dy\": -3,\r\n        \"panelHeight\": 14,\r\n        \"panelWidth\": 11,\r\n        \"x\": 5,\r\n        \"y\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/SpriteUsers-war/api/sprites/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"SpriteUsers-war",
+						"api",
+						"sprites",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST on root - update id (Fi2)",
+			"request": {
+				"auth": {
+					"type": "basic"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"color\": {\r\n            \"red\": 225,\r\n            \"green\": 74,\r\n            \"blue\": 255\r\n        },\r\n        \"id\": 401\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/SpriteUsers-war/api/sprites/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"SpriteUsers-war",
+						"api",
+						"sprites",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST on root - error ID DNE (Fi3)",
+			"request": {
+				"auth": {
+					"type": "basic"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"color\": {\r\n            \"red\": 25,\r\n            \"green\": 74,\r\n            \"blue\": 255\r\n        },\r\n        \"dx\": 3,\r\n        \"dy\": -3,\r\n        \"id\": 403534561,\r\n        \"panelHeight\": 14,\r\n        \"panelWidth\": 11,\r\n        \"x\": 1,\r\n        \"y\": 2\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/SpriteUsers-war/api/sprites/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"SpriteUsers-war",
+						"api",
+						"sprites",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "basic",
+		"basic": [
+			{
+				"key": "password",
+				"value": "password",
+				"type": "string"
+			},
+			{
+				"key": "username",
+				"value": "uid01",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

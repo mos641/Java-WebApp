@@ -1,0 +1,410 @@
+{
+  "id": "bb6945bd-a517-4d70-9e19-f8f9b4cec8ee",
+  "version": "2.0",
+  "name": "SeleniumTests",
+  "url": "http://localhost:8080/Assignment2_SpriteShahram-war/",
+  "tests": [{
+    "id": "b0e5a036-0ccf-4746-bb8f-53875e455fb6",
+    "name": "EditingUser",
+    "commands": [{
+      "id": "437c42be-d65f-4c82-9611-38a7a1f8ae7a",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/Assignment2_SpriteShahram-war/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dcef0bd8-ac8a-4b09-afc3-ee19ce7ab38e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "836x824",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "37deca78-e10c-4d14-bd74-8184af355207",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Show All AppUser Items",
+      "targets": [
+        ["linkText=Show All AppUser Items", "linkText"],
+        ["css=a:nth-child(6)", "css:finder"],
+        ["xpath=//a[contains(text(),'Show All AppUser Items')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Assignment2_SpriteShahram-war/faces/appUser/List.xhtml')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Show All AppUser Items')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c548f3a9-f5ad-4401-a6cd-702665e4e72f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Edit",
+      "targets": [
+        ["linkText=Edit", "linkText"],
+        ["css=.jsfcrud_odd_row:nth-child(1) a:nth-child(3)", "css:finder"],
+        ["xpath=//a[contains(text(),'Edit')]", "xpath:link"],
+        ["xpath=//a[@onclick=\"mojarra.jsfcljs(document.getElementById('j_idt11'),{'j_idt11:j_idt21:0:j_idt35':'j_idt11:j_idt21:0:j_idt35'},'');return false\"]", "xpath:attributes"],
+        ["xpath=//form[@id='j_idt11']/table/tbody/tr/td[4]/a[2]", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[2]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Edit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c8cc7287-3aa1-4ab6-8f1a-47b872502ec1",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(3)",
+      "targets": [
+        ["css=tr:nth-child(3)", "css:finder"],
+        ["xpath=//form[@id='j_idt12']/table/tbody/tr[3]", "xpath:idRelative"],
+        ["xpath=//tr[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ba5e61dc-a305-4788-9014-ebf19bce32e2",
+      "comment": "",
+      "command": "type",
+      "target": "id=j_idt12:groupName",
+      "targets": [
+        ["id=j_idt12:groupName", "id"],
+        ["name=j_idt12:groupName", "name"],
+        ["css=#j_idt12\\3AgroupName", "css:finder"],
+        ["xpath=//input[@id='j_idt12:groupName']", "xpath:attributes"],
+        ["xpath=//form[@id='j_idt12']/table/tbody/tr[3]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[3]/td[2]/input", "xpath:position"]
+      ],
+      "value": "JsfGroup"
+    }, {
+      "id": "adf719dc-062f-464e-ab2b-8cf77ad27d21",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Save",
+      "targets": [
+        ["linkText=Save", "linkText"],
+        ["css=a:nth-child(4)", "css:finder"],
+        ["xpath=//a[contains(text(),'Save')]", "xpath:link"],
+        ["xpath=//a[@onclick=\"mojarra.jsfcljs(document.getElementById('j_idt12'),{'j_idt12:j_idt17':'j_idt12:j_idt17'},'');return false\"]", "xpath:attributes"],
+        ["xpath=//form[@id='j_idt12']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Save')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e92146a6-6cbe-429e-8c5c-fb2a42ab3f8b",
+      "comment": "updated user.",
+      "command": "assertText",
+      "target": "css=table:nth-child(1) td",
+      "targets": [
+        ["css=table:nth-child(1) td", "css:finder"],
+        ["xpath=//div[@id='messagePanel']/table/tbody/tr/td", "xpath:idRelative"],
+        ["xpath=//td", "xpath:position"],
+        ["xpath=//td[contains(.,'AppUser was successfully updated.')]", "xpath:innerText"]
+      ],
+      "value": "AppUser was successfully updated."
+    }]
+  }, {
+    "id": "3ce0fe2f-6346-4681-a6f2-bf6e7e5d0908",
+    "name": "DeleteUser",
+    "commands": [{
+      "id": "04ef2c76-d468-4c4e-8458-f68406811203",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/Assignment2_SpriteShahram-war/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f15b303f-d6ab-4214-90b0-5872c70e92be",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "834x824",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e48ba099-66a2-4bc2-921c-134c56e359e5",
+      "comment": "",
+      "command": "click",
+      "target": "css=body",
+      "targets": [
+        ["css=body", "css:finder"],
+        ["xpath=//body", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3f96a65c-af76-4f4a-9b74-677ce1732d2f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Show All AppUser Items",
+      "targets": [
+        ["linkText=Show All AppUser Items", "linkText"],
+        ["css=a:nth-child(6)", "css:finder"],
+        ["xpath=//a[contains(text(),'Show All AppUser Items')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Assignment2_SpriteShahram-war/faces/appUser/List.xhtml')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Show All AppUser Items')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cd97321f-44e6-4086-918a-d36afbb6f413",
+      "comment": "",
+      "command": "click",
+      "target": "css=.jsfcrud_odd_row:nth-child(3) a:nth-child(1)",
+      "targets": [
+        ["css=.jsfcrud_odd_row:nth-child(3) a:nth-child(1)", "css:finder"],
+        ["xpath=(//a[contains(text(),'View')])[3]", "xpath:link"],
+        ["xpath=//a[@onclick=\"mojarra.jsfcljs(document.getElementById('j_idt11'),{'j_idt11:j_idt21:2:j_idt33':'j_idt11:j_idt21:2:j_idt33'},'');return false\"]", "xpath:attributes"],
+        ["xpath=//form[@id='j_idt11']/table/tbody/tr[3]/td[4]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[7]", "xpath:href"],
+        ["xpath=//tr[3]/td[4]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a654151f-9296-4836-8f03-097294407b46",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Destroy",
+      "targets": [
+        ["linkText=Destroy", "linkText"],
+        ["css=a:nth-child(5)", "css:finder"],
+        ["xpath=//a[contains(text(),'Destroy')]", "xpath:link"],
+        ["xpath=//a[@onclick=\"mojarra.jsfcljs(document.getElementById('j_idt12'),{'j_idt12:j_idt21':'j_idt12:j_idt21'},'');return false\"]", "xpath:attributes"],
+        ["xpath=//form[@id='j_idt12']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Destroy')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "28dcd7be-e17d-439e-a714-861605140a32",
+      "comment": "deleted user. ",
+      "command": "assertText",
+      "target": "css=table:nth-child(1) td",
+      "targets": [
+        ["css=table:nth-child(1) td", "css:finder"],
+        ["xpath=//div[@id='messagePanel']/table/tbody/tr/td", "xpath:idRelative"],
+        ["xpath=//td", "xpath:position"],
+        ["xpath=//td[contains(.,'AppUser was successfully deleted.')]", "xpath:innerText"]
+      ],
+      "value": "AppUser was successfully deleted."
+    }]
+  }, {
+    "id": "2b20fb87-143d-42e0-bdfd-3b351c3cee5b",
+    "name": "EditSprite",
+    "commands": [{
+      "id": "08db7cd5-9c5e-4fa4-9a4a-f1132fbaacc4",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/Assignment2_SpriteShahram-war/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4b327838-7a6f-4dd9-8ff9-4cc07c799795",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "836x824",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c85e8a68-3caf-4348-9e02-dd0ec62f788c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Show All Sprite Items",
+      "targets": [
+        ["linkText=Show All Sprite Items", "linkText"],
+        ["css=a:nth-child(3)", "css:finder"],
+        ["xpath=//a[contains(text(),'Show All Sprite Items')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Assignment2_SpriteShahram-war/faces/sprite/List.xhtml')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Show All Sprite Items')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1233b5ac-85b2-4882-9fa2-17ecc80f64c5",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Edit",
+      "targets": [
+        ["linkText=Edit", "linkText"],
+        ["css=.jsfcrud_odd_row:nth-child(1) a:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Edit')]", "xpath:link"],
+        ["xpath=//a[@onclick=\"mojarra.jsfcljs(document.getElementById('j_idt11'),{'j_idt11:j_idt21:0:j_idt50':'j_idt11:j_idt21:0:j_idt50'},'');return false\"]", "xpath:attributes"],
+        ["xpath=//form[@id='j_idt11']/table/tbody/tr/td[9]/a[2]", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[3]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Edit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "367e1f3f-5fdb-496b-865d-9a565a662c16",
+      "comment": "",
+      "command": "click",
+      "target": "id=j_idt12:panelHeight",
+      "targets": [
+        ["id=j_idt12:panelHeight", "id"],
+        ["name=j_idt12:panelHeight", "name"],
+        ["css=#j_idt12\\3ApanelHeight", "css:finder"],
+        ["xpath=//input[@id='j_idt12:panelHeight']", "xpath:attributes"],
+        ["xpath=//form[@id='j_idt12']/table/tbody/tr[2]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[2]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2ea457ec-cd1c-4922-966a-e6f9247c4ace",
+      "comment": "",
+      "command": "type",
+      "target": "id=j_idt12:panelHeight",
+      "targets": [
+        ["id=j_idt12:panelHeight", "id"],
+        ["name=j_idt12:panelHeight", "name"],
+        ["css=#j_idt12\\3ApanelHeight", "css:finder"],
+        ["xpath=//input[@id='j_idt12:panelHeight']", "xpath:attributes"],
+        ["xpath=//form[@id='j_idt12']/table/tbody/tr[2]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[2]/td[2]/input", "xpath:position"]
+      ],
+      "value": "300"
+    }, {
+      "id": "22aa231b-4577-4797-ab42-4dce550fc437",
+      "comment": "",
+      "command": "click",
+      "target": "id=j_idt12:panelWidth",
+      "targets": [
+        ["id=j_idt12:panelWidth", "id"],
+        ["name=j_idt12:panelWidth", "name"],
+        ["css=#j_idt12\\3ApanelWidth", "css:finder"],
+        ["xpath=//input[@id='j_idt12:panelWidth']", "xpath:attributes"],
+        ["xpath=//form[@id='j_idt12']/table/tbody/tr/td[2]/input", "xpath:idRelative"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1b861ac5-3eeb-4df8-abac-1c2f839fa516",
+      "comment": "",
+      "command": "type",
+      "target": "id=j_idt12:panelWidth",
+      "targets": [
+        ["id=j_idt12:panelWidth", "id"],
+        ["name=j_idt12:panelWidth", "name"],
+        ["css=#j_idt12\\3ApanelWidth", "css:finder"],
+        ["xpath=//input[@id='j_idt12:panelWidth']", "xpath:attributes"],
+        ["xpath=//form[@id='j_idt12']/table/tbody/tr/td[2]/input", "xpath:idRelative"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": "300"
+    }, {
+      "id": "ca6144e6-c560-4950-bbf0-f7fcf8074d29",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Save",
+      "targets": [
+        ["linkText=Save", "linkText"],
+        ["css=a:nth-child(4)", "css:finder"],
+        ["xpath=//a[contains(text(),'Save')]", "xpath:link"],
+        ["xpath=//a[@onclick=\"mojarra.jsfcljs(document.getElementById('j_idt12'),{'j_idt12:j_idt21':'j_idt12:j_idt21'},'');return false\"]", "xpath:attributes"],
+        ["xpath=//form[@id='j_idt12']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Save')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "acebf5fd-36ec-490c-b4d6-6eebe80d3510",
+      "comment": "updated sprite. ",
+      "command": "assertText",
+      "target": "css=table:nth-child(1) td",
+      "targets": [
+        ["css=table:nth-child(1) td", "css:finder"],
+        ["xpath=//div[@id='messagePanel']/table/tbody/tr/td", "xpath:idRelative"],
+        ["xpath=//td", "xpath:position"],
+        ["xpath=//td[contains(.,'Sprite was successfully updated.')]", "xpath:innerText"]
+      ],
+      "value": "Sprite was successfully updated."
+    }]
+  }, {
+    "id": "330d88d9-a3b0-4e85-a567-7deed96d3515",
+    "name": "DeleteSprite",
+    "commands": [{
+      "id": "c0fb9d88-e62e-4107-861c-1366ba8ffd45",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/Assignment2_SpriteShahram-war/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "350f9f6d-8c69-477b-b879-52a99fd5d8ea",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "834x824",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9b6ed312-bdfc-4d59-9fc9-a9fa01fc2919",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Show All Sprite Items",
+      "targets": [
+        ["linkText=Show All Sprite Items", "linkText"],
+        ["css=a:nth-child(3)", "css:finder"],
+        ["xpath=//a[contains(text(),'Show All Sprite Items')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Assignment2_SpriteShahram-war/faces/sprite/List.xhtml')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Show All Sprite Items')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6ab70a89-7d06-4fb9-9444-1d212c6e2de9",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=View",
+      "targets": [
+        ["linkText=View", "linkText"],
+        ["css=.jsfcrud_odd_row:nth-child(1) a:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'View')]", "xpath:link"],
+        ["xpath=//a[@onclick=\"mojarra.jsfcljs(document.getElementById('j_idt11'),{'j_idt11:j_idt21:0:j_idt48':'j_idt11:j_idt21:0:j_idt48'},'');return false\"]", "xpath:attributes"],
+        ["xpath=//form[@id='j_idt11']/table/tbody/tr/td[9]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[2]", "xpath:href"],
+        ["xpath=//td[9]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'View')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "16b7b45a-89e4-4d96-a94e-67438b9fcb5f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Destroy",
+      "targets": [
+        ["linkText=Destroy", "linkText"],
+        ["css=a:nth-child(5)", "css:finder"],
+        ["xpath=//a[contains(text(),'Destroy')]", "xpath:link"],
+        ["xpath=//a[@onclick=\"mojarra.jsfcljs(document.getElementById('j_idt12'),{'j_idt12:j_idt31':'j_idt12:j_idt31'},'');return false\"]", "xpath:attributes"],
+        ["xpath=//form[@id='j_idt12']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Destroy')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "48c2942e-228a-424a-b278-42025b61db24",
+      "comment": "deleting sprite. ",
+      "command": "assertText",
+      "target": "css=table:nth-child(1) td",
+      "targets": [
+        ["css=table:nth-child(1) td", "css:finder"],
+        ["xpath=//div[@id='messagePanel']/table/tbody/tr/td", "xpath:idRelative"],
+        ["xpath=//td", "xpath:position"],
+        ["xpath=//td[contains(.,'Sprite was successfully deleted.')]", "xpath:innerText"]
+      ],
+      "value": "Sprite was successfully deleted."
+    }]
+  }],
+  "suites": [{
+    "id": "87a4b841-a04c-4d8e-823e-73be6f5854ec",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["http://localhost:8080/Assignment2_SpriteShahram-war/"],
+  "plugins": []
+}

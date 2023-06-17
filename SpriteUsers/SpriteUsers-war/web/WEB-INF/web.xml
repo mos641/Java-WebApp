@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="4.0" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd">
+    <context-param>
+        <param-name>javax.faces.PROJECT_STAGE</param-name>
+        <param-value>Development</param-value>
+    </context-param>
+    <servlet>
+        <servlet-name>Faces Servlet</servlet-name>
+        <servlet-class>javax.faces.webapp.FacesServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Faces Servlet</servlet-name>
+        <url-pattern>/faces/*</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <welcome-file-list>
+        <welcome-file>faces/index.xhtml</welcome-file>
+    </welcome-file-list>
+    
+     <!--Security constraints for Admin to view and manage the appuser table, which contains the accounts for the application.-->
+    <security-constraint>
+        <display-name>AdminConstraint</display-name>
+        <web-resource-collection>
+            <web-resource-name>AppUsers</web-resource-name>
+            <description>Administration area</description>
+            <url-pattern>/faces/appuser/*</url-pattern>
+        </web-resource-collection>
+        <auth-constraint>
+            <description>Administration Constraint</description>
+            <role-name>Admin</role-name>
+        </auth-constraint>
+    </security-constraint>
+    
+    
+     <!--Security constraints for JsfGroup and Admin to view JSF aprite pages.--> 
+    <security-constraint>
+        <display-name>SpriteConstraint</display-name>
+        <web-resource-collection>
+            <web-resource-name>Sprites</web-resource-name>
+            <description>JSF Sprite Pages</description>
+            <url-pattern>/faces/sprite/*</url-pattern>
+        </web-resource-collection>
+        <auth-constraint>
+            <description>Sprites Constraint</description>
+            <role-name>JsfGroup</role-name>
+            <role-name>Admin</role-name>
+        </auth-constraint>
+    </security-constraint>
+</web-app>
