@@ -47,7 +47,7 @@ public class Appuser implements Serializable {
     @Size(min = 1, max = 255)
     // change depending on database definition
     @Column(name = "ID")
-//    @Column(name = "USERID")
+	// @Column(name = "USERID")
     private String id;
     
     @Size(max = 255)

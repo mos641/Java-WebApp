@@ -1,7 +1,5 @@
 /*
 Authors:        abde
-
-
 File:           AbstractFacade.java
 Description:    An abstract facade for our entities
 */
